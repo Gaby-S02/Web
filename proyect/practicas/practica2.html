@@ -1,0 +1,41 @@
+<!Doctype html>
+ <html>
+  <head>
+   <title>Registro</title>
+  </head>
+<body>
+
+<style> 
+*{
+padding:0px;
+margin:0px;
+}
+ body{
+background-color:#000;
+color:#FFF;
+} 
+</style>
+    <h1>Registro de usuario</h1>
+    <p>por favor Digita los datos que se te solicitan</p>
+    <form id="Registro">
+    <input type="text" placeholder="nombre" id="nombre"/> <br>
+    <input type="text" placeholder="Apellidos" id="Ap"/> <br>
+    <input type="date" id="fecha"/>
+    <label for="fecha">selecciona tu fecha de nacimiento</label><br>
+    <input type="password" placeholder="Digita tu password" id="pass"/> <br>
+    <input type="number" min="1" mx="100"/ id="numero"><br>
+    <label for="color">selecciona tu color favorito</label>
+    <input type="color" id="color"/><br>
+    <button onclick="registro()">Registrar</button>
+
+</form>
+<script>
+ function registro(){
+let nombre=document.getElementById("nombre").value;
+alert("tu nombre es:"+ nombre);
+
+}
+</script>
+
+  </body>
+ </html>
